@@ -1,4 +1,5 @@
 from django.http import HttpResponse
+from django.shorcuts import render
 
 def first_page(request):
-    return HttpResponse('Hello, friend!')
+    return render(request, './index.html ')
